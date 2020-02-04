@@ -10,22 +10,9 @@ import SwiftUI
 
 struct ContentView: View {
     
-    var loadingState = LoadingState.loading
-    
-    enum LoadingState {
-        case loading, success, failed
-    }
-    
     var body: some View {
-        Group {
-            if loadingState == .loading {
-                LoadingView()
-            } else if loadingState == .success {
-                SuccessView()
-            } else if loadingState == .failed {
-                FailedView()
-            }
-        }
+        MapView()
+            .edgesIgnoringSafeArea(.all)
     }
 }
 
@@ -35,20 +22,3 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-struct LoadingView: View {
-    var body: some View {
-        Text("Loading...")
-    }
-}
-
-struct SuccessView: View {
-    var body: some View {
-        Text("Success!")
-    }
-}
-
-struct FailedView: View {
-    var body: some View {
-        Text("Failed!")
-    }
-}
