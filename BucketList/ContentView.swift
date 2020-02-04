@@ -7,46 +7,50 @@
 //
 
 
-import LocalAuthentication
+import MapKit
 import SwiftUI
 
 struct ContentView: View {
     
-    @State private var isUnlocked = false
+    @State private var centerCoordinate = CLLocationCoordinate2D()
+    @State private var locations = [MKPointAnnotation]()
+    @State private var selectedPlace: MKPointAnnotation?
+    @State private var showingPlaceDetails = false
     
     var body: some View {
-        VStack {
-            if self.isUnlocked {
-                Text("Unlocked")
-            } else {
-                Text("Locked")
-            }
-        }.onAppear(perform: authenticate)
-    }
-    
-    func authenticate() {
-        //create and LAContext object
-        let context = LAContext()
-        //creating an optional error variable of type NSError cause this LA was built using objc
-        var error: NSError?
-        
-        //check if biometric auth can be possible
-        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
-            let reason = "We need to unlock your data."
-            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success, authenticationError in
-                //need to push to main thread to make UI Updates
-                DispatchQueue.main.async {
-                    if success {
-                        //auth successfully
-                        //use @State var
-                        self.isUnlocked = true
-                    } else {
-                        //there was a problem
+        ZStack {
+            MapView(centerCoordinate: $centerCoordinate, selectedPlace: $selectedPlace, showingPlaceDetails: $showingPlaceDetails, annotations: locations)
+                .edgesIgnoringSafeArea(.all)
+            Circle()
+                .fill(Color.blue)
+                .opacity(0.3)
+                .frame(width: 32, height: 32)
+            
+            VStack {
+                Spacer()
+                HStack {
+                    Spacer()
+                    Button(action: {
+                        //action
+                        let newLocation = MKPointAnnotation()
+                        newLocation.title = "Example location"
+                        newLocation.coordinate = self.centerCoordinate
+                        self.locations.append(newLocation)
+                    }) {
+                        Image(systemName: "plus")
                     }
+                .padding()
+                    .background(Color.black.opacity(0.75))
+                    .foregroundColor(.white)
+                    .font(.title)
+                .clipShape(Circle())
+                    .padding(.trailing)
                 }
             }
-        } else {
-            //no biometric system available
+        }.alert(isPresented: $showingPlaceDetails) {
+            Alert(title: Text(selectedPlace?.title ?? "Unknown"), message: Text(selectedPlace?.subtitle ?? "Missing place information"), primaryButton: .default(Text("OK")), secondaryButton: .default(Text("Edit")){
+              //editing action
+            })
         }
     }
 }
