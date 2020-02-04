@@ -14,7 +14,7 @@
 		4065162523E665320090DF0C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4065162423E665320090DF0C /* Preview Assets.xcassets */; };
 		4065162823E665320090DF0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4065162623E665320090DF0C /* LaunchScreen.storyboard */; };
 		40FD725323E7AD640024F805 /* Helper+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FD725223E7AD640024F805 /* Helper+Extensions.swift */; };
-		40FD725523E8FD9D0024F805 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FD725423E8FD9D0024F805 /* MapView.swift */; };
+		40FD725723E94C350024F805 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FD725623E94C350024F805 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		4065162723E665320090DF0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4065162923E665320090DF0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40FD725223E7AD640024F805 /* Helper+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Helper+Extensions.swift"; sourceTree = "<group>"; };
-		40FD725423E8FD9D0024F805 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		40FD725623E94C350024F805 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +68,7 @@
 				4065162923E665320090DF0C /* Info.plist */,
 				4065162323E665320090DF0C /* Preview Content */,
 				40FD725223E7AD640024F805 /* Helper+Extensions.swift */,
-				40FD725423E8FD9D0024F805 /* MapView.swift */,
+				40FD725623E94C350024F805 /* MapView.swift */,
 			);
 			path = BucketList;
 			sourceTree = "<group>";
@@ -154,7 +154,7 @@
 			files = (
 				4065161C23E6652E0090DF0C /* AppDelegate.swift in Sources */,
 				40FD725323E7AD640024F805 /* Helper+Extensions.swift in Sources */,
-				40FD725523E8FD9D0024F805 /* MapView.swift in Sources */,
+				40FD725723E94C350024F805 /* MapView.swift in Sources */,
 				4065161E23E6652E0090DF0C /* SceneDelegate.swift in Sources */,
 				4065162023E6652E0090DF0C /* ContentView.swift in Sources */,
 			);
