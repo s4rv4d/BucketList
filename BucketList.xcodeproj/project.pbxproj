@@ -15,6 +15,10 @@
 		4065162823E665320090DF0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4065162623E665320090DF0C /* LaunchScreen.storyboard */; };
 		40FD725323E7AD640024F805 /* Helper+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FD725223E7AD640024F805 /* Helper+Extensions.swift */; };
 		40FD725723E94C350024F805 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FD725623E94C350024F805 /* MapView.swift */; };
+		40FD725923E9B9B70024F805 /* MKPointAnnotation-ObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FD725823E9B9B70024F805 /* MKPointAnnotation-ObservableObject.swift */; };
+		40FD725B23E9BAB70024F805 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FD725A23E9BAB70024F805 /* EditView.swift */; };
+		40FD725D23EA4EF50024F805 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FD725C23EA4EF50024F805 /* Result.swift */; };
+		40FD725F23EA54E90024F805 /* MKPointAnnotation-Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FD725E23EA54E90024F805 /* MKPointAnnotation-Codable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		4065162923E665320090DF0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40FD725223E7AD640024F805 /* Helper+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Helper+Extensions.swift"; sourceTree = "<group>"; };
 		40FD725623E94C350024F805 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		40FD725823E9B9B70024F805 /* MKPointAnnotation-ObservableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKPointAnnotation-ObservableObject.swift"; sourceTree = "<group>"; };
+		40FD725A23E9BAB70024F805 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		40FD725C23EA4EF50024F805 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		40FD725E23EA54E90024F805 /* MKPointAnnotation-Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKPointAnnotation-Codable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +77,10 @@
 				4065162323E665320090DF0C /* Preview Content */,
 				40FD725223E7AD640024F805 /* Helper+Extensions.swift */,
 				40FD725623E94C350024F805 /* MapView.swift */,
+				40FD725823E9B9B70024F805 /* MKPointAnnotation-ObservableObject.swift */,
+				40FD725A23E9BAB70024F805 /* EditView.swift */,
+				40FD725C23EA4EF50024F805 /* Result.swift */,
+				40FD725E23EA54E90024F805 /* MKPointAnnotation-Codable.swift */,
 			);
 			path = BucketList;
 			sourceTree = "<group>";
@@ -153,9 +165,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4065161C23E6652E0090DF0C /* AppDelegate.swift in Sources */,
+				40FD725923E9B9B70024F805 /* MKPointAnnotation-ObservableObject.swift in Sources */,
 				40FD725323E7AD640024F805 /* Helper+Extensions.swift in Sources */,
 				40FD725723E94C350024F805 /* MapView.swift in Sources */,
+				40FD725B23E9BAB70024F805 /* EditView.swift in Sources */,
 				4065161E23E6652E0090DF0C /* SceneDelegate.swift in Sources */,
+				40FD725F23EA54E90024F805 /* MKPointAnnotation-Codable.swift in Sources */,
+				40FD725D23EA4EF50024F805 /* Result.swift in Sources */,
 				4065162023E6652E0090DF0C /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
