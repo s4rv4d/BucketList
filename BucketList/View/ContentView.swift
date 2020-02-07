@@ -43,7 +43,6 @@ struct ContentView: View {
     }
     
     //MARK: - Function
-    
     func authenticate() {
         //create and LAContext object
         let context = LAContext()
@@ -77,6 +76,7 @@ struct ContentView: View {
 
 struct UnlockwdView: View {
     
+    //MARK: - Properties
     @State private var centerCoordinate = CLLocationCoordinate2D()
     @State private var locations = [CodableMKPointAnnotation]()
     @State private var selectedPlace: MKPointAnnotation?
@@ -131,6 +131,7 @@ struct UnlockwdView: View {
         .onAppear(perform: loadData)
     }
     
+    //MARK: - Function
     func getDocumentUrl() -> URL {
            let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
            return paths[0]

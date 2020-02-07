@@ -70,17 +70,13 @@
 			children = (
 				4065161B23E6652E0090DF0C /* AppDelegate.swift */,
 				4065161D23E6652E0090DF0C /* SceneDelegate.swift */,
-				4065161F23E6652E0090DF0C /* ContentView.swift */,
 				4065162123E665320090DF0C /* Assets.xcassets */,
 				4065162623E665320090DF0C /* LaunchScreen.storyboard */,
 				4065162923E665320090DF0C /* Info.plist */,
+				40FD726023ED01B50024F805 /* View */,
 				4065162323E665320090DF0C /* Preview Content */,
-				40FD725223E7AD640024F805 /* Helper+Extensions.swift */,
-				40FD725623E94C350024F805 /* MapView.swift */,
-				40FD725823E9B9B70024F805 /* MKPointAnnotation-ObservableObject.swift */,
-				40FD725A23E9BAB70024F805 /* EditView.swift */,
-				40FD725C23EA4EF50024F805 /* Result.swift */,
-				40FD725E23EA54E90024F805 /* MKPointAnnotation-Codable.swift */,
+				40FD726223ED01D40024F805 /* Extensions */,
+				40FD726123ED01C90024F805 /* Model */,
 			);
 			path = BucketList;
 			sourceTree = "<group>";
@@ -91,6 +87,34 @@
 				4065162423E665320090DF0C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		40FD726023ED01B50024F805 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4065161F23E6652E0090DF0C /* ContentView.swift */,
+				40FD725623E94C350024F805 /* MapView.swift */,
+				40FD725A23E9BAB70024F805 /* EditView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		40FD726123ED01C90024F805 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				40FD725823E9B9B70024F805 /* MKPointAnnotation-ObservableObject.swift */,
+				40FD725C23EA4EF50024F805 /* Result.swift */,
+				40FD725E23EA54E90024F805 /* MKPointAnnotation-Codable.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		40FD726223ED01D40024F805 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				40FD725223E7AD640024F805 /* Helper+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
